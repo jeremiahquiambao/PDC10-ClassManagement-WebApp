@@ -1,16 +1,12 @@
 <?php
+require(dirname(dirname(__FILE__)) . '/init.php');
 
-include ("../init.php");
-use Models\Student;
+use App\Student;
 
-$student= new Student('', '', '', '', '', '');
+$student = new Student('');
 $student->setConnection($connection);
-$all_students = $student->getAllStudents();
-#var_dump($all_students);
+$students = $student->getAll();
 
-$mustache = new Mustache_Engine([
-	'loader' => new Mustache_Loader_FilesystemLoader('../templates/students')
-]);
-
-$template = $mustache->loadTemplate('index');
-echo $template->render(compact('all_students', 'success'));
+$template = $mustache->loadTemplate('list-student');
+echo $template->render(compact('students'));
+?>
