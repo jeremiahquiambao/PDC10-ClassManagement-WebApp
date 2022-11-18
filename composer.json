@@ -1,0 +1,15 @@
+{
+    "name": "mustache/mustache",
+    "autoload": {
+        "psr-4": {
+            "Mustache\\Mustache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jeremiahquiambao",
+            "email": "quiambao.jeremiah@auf.edu.ph"
+        }
+    ],
+    "require": {}
+}
