@@ -1,8 +1,8 @@
 {
-    "name": "mustache/mustache",
+    "name": "acer/pdc10-classes",
     "autoload": {
         "psr-4": {
-            "Mustache\\Mustache\\": "src/"
+            "Acer\\Pdc10Classes\\": "src/"
         }
     },
     "authors": [
@@ -12,8 +12,6 @@
         }
     ],
     "require": {
-        
-        "guzzlehttp/guzzle": "^7.0"
-
+        "guzzlehttp/guzzle": "^7.5"
     }
 }
